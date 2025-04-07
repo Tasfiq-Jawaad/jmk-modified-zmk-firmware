@@ -74,6 +74,7 @@ jobs:
             echo "found"
             echo "base_dir=${new_tmp_dir}" >> $GITHUB_ENV
           else
+            echo "not found"
             echo "base_dir=${GITHUB_WORKSPACE}" >> $GITHUB_ENV
           fi
 
