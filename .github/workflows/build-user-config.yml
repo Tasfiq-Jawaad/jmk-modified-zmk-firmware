@@ -132,9 +132,9 @@ jobs:
 
       - name: ${{ env.display_name }} Kconfig file
         run: |
-          if [ -f "${{ env.build_dir }}/zephyr/.config" ]
+          if [ -f "${{ env.build_dir }}/zmk-config/zephyr/.config" ]
           then
-            grep -v -e "^#" -e "^$" "${{ env.build_dir }}/zephyr/.config" | sort
+            grep -v -e "^#" -e "^$" "${{ env.build_dir }}/zmk-config/zephyr/.config" | sort
           else
             echo "No Kconfig output"
           fi
