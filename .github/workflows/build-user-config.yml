@@ -122,7 +122,7 @@ jobs:
         run: west update
 
       - name: West Zephyr export
-        working-directory: "${{ env.base_dir }}/${{ inputs.config_path }}"
+        working-directory: "${{ env.base_dir }}/zmk-config"
         run: west zephyr-export
 
       - name: West Build (${{ env.display_name }})
